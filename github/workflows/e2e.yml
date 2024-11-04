@@ -8,7 +8,7 @@ name: e2e tests
 #     branches: [ main, master ]
 
 # schedule run
-on:
+off:
   schedule: 
     - cron: "30 8 * * 1-5"   # <=== Change this value
   workflow_dispatch:
