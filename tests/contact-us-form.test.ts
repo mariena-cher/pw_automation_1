@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test('user can submit contact us form', async ({ page }) => {
   await page.goto('https://shopdemo-alex-hot.koyeb.app/contact');
   await page.getByPlaceholder('You Full Name').click();
-  await page.getByPlaceholder('You Full Name').fill('Maryna');
+  await page.getByPlaceholder('You Full Name').fill('Anna');
   await page.getByPlaceholder('Your Email Address').click();
   await page.getByPlaceholder('Your Email Address').fill(Date.now()+'@test.com');
   await page.getByPlaceholder('Please Describe Your Message').click();
